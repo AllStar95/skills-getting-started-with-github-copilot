@@ -74,6 +74,92 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #dce2ea;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #35445c;
+  font-size: 0.95rem;
+}
+
+.participants-count {
+  min-width: 26px;
+  padding: 1px 8px;
+  border-radius: 12px;
+  background-color: #e3f2ec;
+  color: #267357;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.participant-list {
+  display: grid;
+  gap: 4px;
+  padding-left: 0;
+  color: #4a5565;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+  list-style: none;
+}
+
+.participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #e2caca;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #a43a3a;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.remove-participant:hover {
+  border-color: #d99c9c;
+  background-color: #ffeded;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.remove-participant:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.participant-list.is-empty {
+  padding-left: 0;
+  color: #777;
+  font-style: italic;
+  list-style: none;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
